@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08192CAB2234713B00C19F9A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08192CAA2234713B00C19F9A /* Player.swift */; };
+		08192CAD2235DB9B00C19F9A /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08192CAC2235DB9B00C19F9A /* Action.swift */; };
+		085BCB7822E4E8070088E128 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085BCB7722E4E8070088E128 /* Game.swift */; };
+		085BCB7C22EA82960088E128 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085BCB7B22EA82960088E128 /* AnimationViewController.swift */; };
+		08F3B61D2320AB7000F3A40A /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F3B61C2320AB7000F3A40A /* GameTableViewController.swift */; };
 		08F59EE821F2DAC200A4DA3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F59EE721F2DAC200A4DA3E /* AppDelegate.swift */; };
-		08F59EEA21F2DAC200A4DA3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F59EE921F2DAC200A4DA3E /* ViewController.swift */; };
 		08F59EED21F2DAC200A4DA3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F59EEB21F2DAC200A4DA3E /* Main.storyboard */; };
 		08F59EEF21F2DAC400A4DA3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F59EEE21F2DAC400A4DA3E /* Assets.xcassets */; };
 		08F59EF221F2DAC400A4DA3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F59EF021F2DAC400A4DA3E /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08192CAA2234713B00C19F9A /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		08192CAC2235DB9B00C19F9A /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		085BCB7722E4E8070088E128 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		085BCB7B22EA82960088E128 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		08F3B61C2320AB7000F3A40A /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
 		08F59EE421F2DAC200A4DA3E /* MyCows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F59EE721F2DAC200A4DA3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		08F59EE921F2DAC200A4DA3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08F59EEC21F2DAC200A4DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		08F59EEE21F2DAC400A4DA3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08F59EF121F2DAC400A4DA3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,9 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08192CA9223470EF00C19F9A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				08192CAA2234713B00C19F9A /* Player.swift */,
+				08192CAC2235DB9B00C19F9A /* Action.swift */,
+				085BCB7722E4E8070088E128 /* Game.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		08F59EDB21F2DAC200A4DA3E = {
 			isa = PBXGroup;
 			children = (
+				085BCB7B22EA82960088E128 /* AnimationViewController.swift */,
 				08F59EE621F2DAC200A4DA3E /* MyCows */,
 				08F59EFB21F2DAC400A4DA3E /* MyCowsTests */,
 				08F59F0621F2DAC400A4DA3E /* MyCowsUITests */,
@@ -97,8 +116,9 @@
 		08F59EE621F2DAC200A4DA3E /* MyCows */ = {
 			isa = PBXGroup;
 			children = (
+				08192CA9223470EF00C19F9A /* Classes */,
+				08F59F1721F2E6BF00A4DA3E /* View Controllers */,
 				08F59EE721F2DAC200A4DA3E /* AppDelegate.swift */,
-				08F59EE921F2DAC200A4DA3E /* ViewController.swift */,
 				08F59EEB21F2DAC200A4DA3E /* Main.storyboard */,
 				08F59EEE21F2DAC400A4DA3E /* Assets.xcassets */,
 				08F59EF021F2DAC400A4DA3E /* LaunchScreen.storyboard */,
@@ -123,6 +143,14 @@
 				08F59F0921F2DAC400A4DA3E /* Info.plist */,
 			);
 			path = MyCowsUITests;
+			sourceTree = "<group>";
+		};
+		08F59F1721F2E6BF00A4DA3E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08F3B61C2320AB7000F3A40A /* GameTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +221,16 @@
 				TargetAttributes = {
 					08F59EE321F2DAC200A4DA3E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 					};
 					08F59EF721F2DAC400A4DA3E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 08F59EE321F2DAC200A4DA3E;
 					};
 					08F59F0221F2DAC400A4DA3E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = 08F59EE321F2DAC200A4DA3E;
 					};
 				};
@@ -256,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F59EEA21F2DAC200A4DA3E /* ViewController.swift in Sources */,
+				08192CAB2234713B00C19F9A /* Player.swift in Sources */,
+				085BCB7822E4E8070088E128 /* Game.swift in Sources */,
+				085BCB7C22EA82960088E128 /* AnimationViewController.swift in Sources */,
+				08F3B61D2320AB7000F3A40A /* GameTableViewController.swift in Sources */,
 				08F59EE821F2DAC200A4DA3E /* AppDelegate.swift in Sources */,
+				08192CAD2235DB9B00C19F9A /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,7 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,7 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCows;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -479,7 +514,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCowsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCows.app/MyCows";
 			};
@@ -500,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCowsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCows.app/MyCows";
 			};
@@ -520,7 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCowsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MyCows;
 			};
@@ -540,7 +575,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = KyleThompson.MyCowsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MyCows;
 			};
